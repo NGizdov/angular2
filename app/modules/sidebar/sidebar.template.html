@@ -1,0 +1,25 @@
+<nav on-mouseover='isHover(true)' on-mouseleave='isHover(false)' [class.nav-shrinked]="!isHovered" [class.nav-expanded]="isHovered">
+<!--<nav on-mouseover='isHover(true)' on-mouseleave='isHover(false)' class="nav-expanded">-->
+    <div [class]="isHovered ? 'logo-big' : 'logo'" (click)="goHome()"></div>
+    <div style="margin-top:50px">
+        <div *ngFor="let item of items">
+            <div class="item" (click)="goTo(item)">
+                <div class="icon" [ngClass]="item.iconClass"></div>
+                <div class="label" [class.nav-label-hide]="!isHovered" [class.nav-label-show]="isHovered">{{item.title}}</div>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<!--<nav (mouseenter)="mouseEnter()" (mouseleave)="mouseLeave()" [class]="isNavBarHovered ? 'nav-expanded' : 'nav-shrinked'">
+    <div *ngIf="isFeatureBuild" class="feature-build-logo"></div>
+	<div [class]="isNavBarHovered ? 'logo-big' : 'logo'"></div>
+    <div *ngFor="let navitem of items; let i=index">
+        <div class="item" (click)="goTo(navitem)" id={{navitem.id}}>
+            <div [class]="navitem.icon + ' icon'"></div>
+            <div class="label">
+                {{navitem.title}}
+            </div>
+        </div>
+    </div>
+</nav>-->

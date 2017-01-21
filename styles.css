@@ -1,0 +1,187 @@
+h1 {
+  color: #369;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 250%;
+}
+
+nav {
+    position: fixed;
+    width: 72px;
+    /*background: #FF4081;*/
+    background: #FFAAA5;
+    color: #fff;
+    height: 100%;
+    z-index: 1;
+    transition: all .3s;
+    font-weight: 500;
+    max-height: 900px;
+    height: 900px;
+    min-height: 900px;
+}
+
+.nav-expanded {
+    width: 286px;
+}
+
+.nav-shrinked {
+    width: 72px;
+}
+
+.nav-label-hide {
+    display: none !important;
+    transition: all .4s;
+}
+.nav-label-show {    
+    display: block !important;
+    transition: all .4s;
+}
+
+nav .label {
+    position: relative;
+    padding: 0 5px;
+    left: 45px;
+    font-weight: 500;
+    margin-top: -45px;
+    overflow: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
+    font-size: 16px;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+nav .item {
+    text-align: left;
+    transition: background .8s;
+    overflow: hidden;
+    white-space: nowrap;
+    height: 72px;
+    cursor: pointer;
+    max-width: 256px;
+    word-wrap: break-word;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    margin-top: 30px;
+}
+
+.logo {
+    width: 72px;
+    height: 72px;
+    cursor: pointer;
+    background-image: url(./img/sidemenu/logo.png);
+    background-size:100% 100%;
+    -o-background-size: 100% 100%;
+    -webkit-background-size: 100% 100%;
+    margin-bottom: 30px;
+    transition: all .4s;
+}
+
+.logo-big {
+    width: 230px;
+    height: 62px;
+    cursor: pointer;
+    margin-top: 20px; 
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(./img/sidemenu/pandishpancheto3.png);
+    background-size:100% 100%;
+    -o-background-size: 100% 100%;
+    -webkit-background-size: 100% 100%;
+    margin-bottom: 30px;
+    transition: all .4s;
+}
+.maincontainer {
+    /*width: 100%;
+    height: auto;*/
+    transition: all .3s;
+    margin: 0;
+    padding-left: 110px;
+    padding-right: 110px;
+    box-sizing: border-box;
+    position: absolute;
+    /*top: 300px;
+    left: -100px;*/
+    
+    max-width: 1100px;
+    width: 1100px;
+    min-width: 1100px;
+    max-height: 900px;
+    height: 900px;
+    min-height: 900px;
+    /*background-color: limegreen*/
+    background-color: #DCEDC1
+    
+
+}
+
+.maincontainer-shrinked {
+    margin-left: 286px;
+}
+
+.maincontainer-expanded {
+    margin-left: 72px;
+    /*width: calc(100% - 72px);*/
+    /*max-width: 1100px;*/
+}
+
+.maincontainer-shrinked-right {
+    margin-left: 72px !important;
+
+}
+
+.icon {
+    width: 72px;
+    height: 72px;
+    background-size:100% 100%;
+    -o-background-size: 100% 100%;
+    -webkit-background-size: 100% 100%;
+    background-position: center center;
+    background-size: cover;
+}
+
+.icon-bd {
+    background-image: url(../img/sidemenu/birthday_icon.png);
+}
+.icon-you {
+    background-image: url(../img/sidemenu/you_icon.png);
+}
+.icon-family {
+    background-image: url(../img/sidemenu/family_icon.png);
+}
+.icon-moment {
+    background-image: url(../img/sidemenu/moment_icon.png);
+}
+.icon-future {
+    background-image: url(../img/sidemenu/future_icon.png);
+}
+
+.header {
+    /*position: relative;
+    top: -280px;
+    left: 20px;*/
+    position: absolute;
+    top: 30px;
+    left: 250px;
+    width: 600px;
+}
+
+.header-logo {
+    min-width: 200px;
+    max-width: 700px;
+    /*margin-left: 100px;*/
+    width: 100%;
+}
+
+.content-container {
+    /*position: relative;
+    top: -250px;
+    left: 20px;*/
+    
+    position: absolute;    
+    top: 380px;
+    left: 100px;
+}

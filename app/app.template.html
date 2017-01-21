@@ -1,0 +1,13 @@
+<sidebar></sidebar>
+<div>
+    <div class="maincontainer" [class.maincontainer-expanded]="!isNavHovered" [class.maincontainer-shrinked]="isNavHovered">
+        <div class='header'>
+            <img class='header-logo' src='./img/happy-bd3.gif'/>
+        </div>
+        <div class="content-container">
+            <div>
+                <router-outlet></router-outlet>
+            </div>
+        </div>
+    </div>
+</div>
